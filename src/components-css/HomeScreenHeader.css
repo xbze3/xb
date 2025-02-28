@@ -1,0 +1,25 @@
+#home-screen-header {
+    background-color: rgb(66, 65, 67);
+    height: 90.1vh;
+    background-image: url("../assets/portfolioBG.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#header-text {
+    padding-top: 150px;
+    color: white;
+    margin-left: 70px;
+}
+
+#header-text > h1 {
+    font-size: 80px;
+}
+
+#header-text > h3 {
+    font-size: 40px;
+}
+
+/* #leafHeaderLogo {
+    padding-top: 100px;
+} */
