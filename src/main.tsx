@@ -8,24 +8,29 @@ import App from "./App.tsx";
 import AboutScreen from "./components/About/AboutScreen.tsx";
 import ProjectsScreen from "./components/Projects/ProjectsScreen.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <App />,
+        },
+        {
+            path: "/home",
+            element: <App />,
+        },
+        {
+            path: "/about",
+            element: <AboutScreen />,
+        },
+        {
+            path: "/projects",
+            element: <ProjectsScreen />,
+        },
+    ],
     {
-        path: "/",
-        element: <App />,
-    },
-    {
-        path: "/home",
-        element: <App />,
-    },
-    {
-        path: "/about",
-        element: <AboutScreen />,
-    },
-    {
-        path: "/projects",
-        element: <ProjectsScreen />,
-    },
-]);
+        basename: "/xb",
+    }
+);
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
